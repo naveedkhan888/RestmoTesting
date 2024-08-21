@@ -319,10 +319,10 @@ class Restimo_VideoPopup extends Widget_Base{
 		
 		<div class="xp-video-button flex-middle">
 		    <?php
-		        // Render the button attributes
-		        $button_attributes = $this->get_render_attribute_string( 'button' );
+		        // Render the button attributes with proper escaping
+		        $button_attributes = esc_attr($this->get_render_attribute_string('button'));
 		        // Render the URL with proper escaping
-		        $button_url = esc_url( $settings['vlink'] );
+		        $button_url = esc_url($settings['vlink']);
 		    ?>
 		    <a <?php echo $button_attributes; ?> href="<?php echo $button_url; ?>">
 		        <i class="xp-flaticon-play"></i>
@@ -330,6 +330,7 @@ class Restimo_VideoPopup extends Widget_Base{
 		    </a>
 		    <?php if( ! empty( $settings['caption'] ) ) { echo '<span class="font-second">' . esc_html( $settings['caption'] ) . '</span>'; } ?>
 		</div>
+
 	    
 	    <?php
 	}
