@@ -317,7 +317,7 @@ class Restimo_VideoPopup extends Widget_Base{
 
 		?>
 		
-		<<div class="xp-video-button flex-middle">
+		<div class="xp-video-button flex-middle">
 		    <a <?php echo $this->get_render_attribute_string('button'); ?> href="<?php echo esc_url($settings['vlink']); ?>">
 		        <i class="xp-flaticon-play"></i>
 		        <?php if( ! empty( $settings['animate'] ) ) { echo '<span class="circle-1"></span>'; } ?>
