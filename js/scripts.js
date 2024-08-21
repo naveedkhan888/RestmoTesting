@@ -99,7 +99,7 @@
 	/* --------------------------------------------------
     * popup video
     * --------------------------------------------------*/
-  	var video_popup = $('');
+  	var video_popup = $('.video-popup');
    	if (video_popup.length > 0 ) {
 	   	video_popup.each( function(){
 		   	$(this).lightGallery({
