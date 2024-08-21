@@ -588,7 +588,12 @@ class Restimo_Testimonials2 extends Widget_Base{
 		$settings = $this->get_settings_for_display();
 		?>
 
-		<div class="xp-testimonials xp-testimonials-carousel-2" data-loop="<?php echo esc_attr($settings['loop']); ?>" data-auto="<?php echo esc_attr($settings['autoplay']); ?>" data-time="<?php echo $settings['timeout']['size']; ?>" data-arrows="<?php echo $settings['arrows']; ?>" data-dots="<?php echo $settings['dots']; ?>">
+		<div class="xp-testimonials xp-testimonials-carousel-2" 
+     data-loop="<?php echo esc_attr($settings['loop']); ?>" 
+     data-auto="<?php echo esc_attr($settings['autoplay']); ?>" 
+     data-time="<?php echo esc_attr($settings['timeout']['size']); ?>" 
+     data-arrows="<?php echo esc_attr($settings['arrows']); ?>" 
+     data-dots="<?php echo esc_attr($settings['dots']); ?>">
 			<div class="owl-carousel owl-theme">
 				<?php if ( ! empty( $settings['testi_slider'] ) ) : foreach ( $settings['testi_slider'] as $testi ) : ?>
 				<div class="testi-item">
