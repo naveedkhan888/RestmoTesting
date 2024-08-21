@@ -559,7 +559,7 @@ class Restimo_Team extends Widget_Base{
 						<?php if ( ! empty( $social['social_link'] ) ) : ?>
 							<a <?php if($social['social_link']['is_external'])
 							{ echo 'target="_blank"'; }else{ echo 'rel="nofollow"';}?> 
-									href="<?php echo esc_url( $social['social_link']['url'] ); ?>" class="<?php echo esc_attr( strtolower( $social['title'] ) ); ?>" style="transition-delay: <?php echo ($key*50).'ms';?>">
+									href="<?php echo esc_url( $social['social_link']['url'] ); ?>" class="<?php echo esc_attr( strtolower( $social['title'] ) ); ?>" style="<?php echo esc_attr( $key * 50 ); ?>ms;'>">
 									<?php Icons_Manager::render_icon( $social['social_icon'], [ 'aria-hidden' => 'true' ] ); ?>
 							</a>
 						<?php endif; ?>

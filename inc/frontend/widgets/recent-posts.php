@@ -77,13 +77,13 @@ class restimo_recent_news extends WP_Widget {
                     <?php if( $post_thumb ) { ?>
                     <div class="thumb">
                         <a href="<?php the_permalink( $recent_post->ID ); ?>">
-                            <?php echo $post_thumb; ?>
+                            <?php echo wp_kses_post( $post_thumb ); ?>
                         </a>
                     </div>
                     <?php } ?>
                     <div class="entry-header">
                         <h6>
-                            <a href="<?php echo esc_url($post_url); ?>"><?php echo $title; ?></a>
+                            <a href='<?php echo esc_url( $post_url ); ?>'><?php echo esc_html( $title ); ?></a>
                         </h6>
                         <?php if($date) { ?>
                         <span class="post-on">
