@@ -99,11 +99,11 @@
 	/* --------------------------------------------------
     * popup video
     * --------------------------------------------------*/
-  	var video_popup = $('.video-popup');
+  	var video_popup = $('');
    	if (video_popup.length > 0 ) {
 	   	video_popup.each( function(){
 		   	$(this).lightGallery({
-			   selector: '',
+			   selector: '.btn-play',
 		   	});
 	   	});
 	};

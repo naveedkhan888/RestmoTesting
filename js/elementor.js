@@ -576,9 +576,9 @@
     * video button
     * --------------------------------------------------*/
     var videoButton = function($scope, $){
-        $scope.find('').each( function(){
+        $scope.find('.xp-video-button').each( function(){
                 $(this).lightGallery({
-                selector: '',
+                selector: '.btn-play',
             });
         });
     }
