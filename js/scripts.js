@@ -103,7 +103,7 @@
    	if (video_popup.length > 0 ) {
 	   	video_popup.each( function(){
 		   	$(this).lightGallery({
-			   selector: '.btn-play',
+			   selector: '',
 		   	});
 	   	});
 	};
