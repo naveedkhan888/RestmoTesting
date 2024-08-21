@@ -1,0 +1,110 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 02/06/2020 23:39
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="xp-flaticon-"]:before, [class*=" xp-flaticon-"]:before,
+[class^="xp-flaticon-"]:after, [class*=" xp-flaticon-"]:after {   
+  font-family: Flaticon;
+  font-style: normal;
+}
+
+.xp-flaticon-download:before { content: "\f100"; }
+.xp-flaticon-search:before { content: "\f101"; }
+.xp-flaticon-menu:before { content: "\f102"; }
+.xp-flaticon-left-arrow:before { content: "\f103"; }
+.xp-flaticon-play:before { content: "\f104"; }
+.xp-flaticon-icon-121954:before { content: "\f105"; }
+.xp-flaticon-phone-call:before { content: "\f106"; }
+.xp-flaticon-placeholder:before { content: "\f107"; }
+.xp-flaticon-check:before { content: "\f108"; }
+.xp-flaticon-call:before { content: "\f109"; }
+.xp-flaticon-right-arrow:before { content: "\f10a"; }
+.xp-flaticon-up-arrow:before { content: "\f10b"; }
+.xp-flaticon-send:before { content: "\f10c"; }
+.xp-flaticon-pin:before { content: "\f10d"; }
+.xp-flaticon-search-1:before { content: "\f10e"; }
+.xp-flaticon-effort:before { content: "\f10f"; }
+.xp-flaticon-task:before { content: "\f110"; }
+.xp-flaticon-target:before { content: "\f111"; }
+.xp-flaticon-strategy:before { content: "\f112"; }
+.xp-flaticon-arrows:before { content: "\f113"; }
+.xp-flaticon-arrows-1:before { content: "\f114"; }
+.xp-flaticon-business-and-finance:before { content: "\f115"; }
+.xp-flaticon-trajectory:before { content: "\f116"; }
+.xp-flaticon-business-and-finance-1:before { content: "\f117"; }
+.xp-flaticon-arrowsoutline:before { content: "\f118"; }
+.xp-flaticon-card:before { content: "\f119"; }
+.xp-flaticon-holidays:before { content: "\f11a"; }
+.xp-flaticon-energy:before { content: "\f11b"; }
+.xp-flaticon-award:before { content: "\f11c"; }
+.xp-flaticon-badge:before { content: "\f11d"; }
+.xp-flaticon-bars-chart:before { content: "\f11e"; }
+.xp-flaticon-rocket:before { content: "\f11f"; }
+.xp-flaticon-left-quote:before { content: "\f120"; }
+.xp-flaticon-signs:before { content: "\f121"; }
+.xp-flaticon-aim:before { content: "\f122"; }
+.xp-flaticon-chart:before { content: "\f123"; }
+.xp-flaticon-clock:before { content: "\f124"; }
+.xp-flaticon-money:before { content: "\f125"; }
+.xp-flaticon-interface:before { content: "\f126"; }
+.xp-flaticon-symbol:before { content: "\f127"; }
+.xp-flaticon-portfolio:before { content: "\f128"; }
+.xp-flaticon-deal:before { content: "\f129"; }
+.xp-flaticon-business:before { content: "\f12a"; }
+.xp-flaticon-precious-stone:before { content: "\f12b"; }
+.xp-flaticon-hourglass:before { content: "\f12c"; }
+.xp-flaticon-certificate:before { content: "\f12d"; }
+.xp-flaticon-arrows-2:before { content: "\f12e"; }
+.xp-flaticon-share:before { content: "\f12f"; }
+.xp-flaticon-files-1:before { content: "\f130"; }
+.xp-flaticon-signs-1:before { content: "\f131"; }
+.xp-flaticon-multimedia:before { content: "\f132"; }
+.xp-flaticon-shapes-and-symbols:before { content: "\f133"; }
+.xp-flaticon-like:before { content: "\f134"; }
+.xp-flaticon-close:before { content: "\f135"; }
+.xp-flaticon-document:before { content: "\f136"; }
+.xp-flaticon-star:before { content: "\f137"; }
+.xp-flaticon-null:before { content: "\f138"; }
+.xp-flaticon-null-1:before { content: "\f139"; }
+.xp-flaticon-null-2:before { content: "\f13a"; }
+.xp-flaticon-null-3:before { content: "\f13b"; }
+.xp-flaticon-tablet:before { content: "\f13c"; }
+.xp-flaticon-illustration:before { content: "\f13d"; }
+.xp-flaticon-search-2:before { content: "\f13e"; }
+.xp-flaticon-paint:before { content: "\f13f"; }
+.xp-flaticon-adjust:before { content: "\f140"; }
+.xp-flaticon-vision:before { content: "\f141"; }
+.xp-flaticon-cancel:before { content: "\f142"; }
+.xp-flaticon-next:before { content: "\f143"; }
+.xp-flaticon-arrow-pointing-to-left:before { content: "\f144"; }
+.xp-flaticon-left-arrow-2:before { content: "\f145"; }
+.xp-flaticon-facebook:before { content: "\f146"; }
+.xp-flaticon-instagram:before { content: "\f147"; }
+.xp-flaticon-twitter:before { content: "\f148"; }
+.xp-flaticon-linkedin:before { content: "\f149"; }
+.xp-flaticon-pinterest:before { content: "\f14a"; }
+.xp-flaticon-google-plus:before { content: "\f14b"; }
+.xp-flaticon-dribble:before { content: "\f14c"; }
+.xp-flaticon-behance:before { content: "\f14d"; }
+.xp-flaticon-youtube:before { content: "\f14e"; }
+.xp-flaticon-refresh:before { content: "\f14f"; }

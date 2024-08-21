@@ -1,0 +1,20 @@
+a:4:{s:8:"template";s:7:"restimo";s:4:"mods";a:25:{s:18:"custom_css_post_id";i:107;s:18:"nav_menu_locations";a:0:{}i:0;b:0;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1719925959;s:4:"data";a:2:{s:19:"wp_inactive_widgets";a:2:{i:0;s:7:"block-5";i:1;s:7:"block-6";}s:7:"primary";a:3:{i:0;s:7:"block-2";i:1;s:7:"block-3";i:2;s:7:"block-4";}}}s:13:"header_layout";s:4:"2960";s:13:"header_mobile";s:4:"2959";s:16:"sidepanel_layout";s:2:"41";s:7:"preload";b:1;s:19:"preload_logo_height";s:2:"44";s:14:"pheader_switch";b:1;s:11:"breadcrumbs";b:1;s:11:"pheader_img";s:96:"https://dpsample.com/wp_themes/restimo/restaurant1/wp-content/uploads/2024/07/2148685481-min.jpg";s:11:"ptitle_post";s:11:"Blog Single";s:11:"blog_layout";s:15:"content-sidebar";s:10:"blog_style";s:4:"list";s:12:"blog_columns";s:9:"pf_2_cols";s:12:"header_fixed";b:1;s:13:"footer_layout";s:2:"50";s:8:"page_404";s:2:"55";s:11:"shop_layout";s:15:"sidebar-content";s:18:"single_shop_layout";s:12:"full-content";s:18:"page_title_product";s:11:"Shop Single";s:10:"main_color";s:7:"#c19977";s:13:"primary_color";s:7:"#81d742";s:15:"secondary_color";s:7:"#dd3333";}s:7:"options";a:22:{s:22:"woocommerce_demo_store";s:2:"no";s:29:"woocommerce_demo_store_notice";s:79:"This is a demo store for testing purposes &mdash; no orders shall be fulfilled.";s:29:"woocommerce_shop_page_display";s:0:"";s:36:"woocommerce_category_archive_display";s:0:"";s:35:"woocommerce_default_catalog_orderby";s:10:"menu_order";s:27:"woocommerce_catalog_columns";s:1:"3";s:24:"woocommerce_catalog_rows";s:1:"3";s:30:"woocommerce_single_image_width";s:3:"600";s:33:"woocommerce_thumbnail_image_width";s:3:"300";s:30:"woocommerce_thumbnail_cropping";s:3:"1:1";s:43:"woocommerce_thumbnail_cropping_custom_width";s:1:"4";s:44:"woocommerce_thumbnail_cropping_custom_height";s:1:"3";s:34:"woocommerce_checkout_company_field";s:8:"optional";s:36:"woocommerce_checkout_address_2_field";s:8:"optional";s:32:"woocommerce_checkout_phone_field";s:8:"required";s:46:"woocommerce_checkout_highlight_required_fields";s:3:"yes";s:55:"woocommerce_checkout_terms_and_conditions_checkbox_text";s:44:"I have read and agree to the website [terms]";s:40:"woocommerce_checkout_privacy_policy_text";s:161:"Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our [privacy_policy].";s:26:"wp_page_for_privacy_policy";s:1:"3";s:25:"woocommerce_terms_page_id";s:0:"";s:9:"site_icon";s:4:"3814";s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:380:".elementor-icon {
+	display:flex !important;
+}
+.main-navigation > ul > li::before {
+	display:none;
+}
+.main-navigation > ul > li > a {
+	padding:0px 0;
+}
+
+.site-header {
+	background: transparent; }
+
+
+.xp-heading > span.is_highlight {
+  padding: 3px 20px;
+  border: 0;
+  border-radius: 0;
+  clip-path: polygon(100% 0%, calc(100% - 0.75rem) 50%, 100% 100%, 0 100%, 0.75rem 50%, 0 0);
+}";}

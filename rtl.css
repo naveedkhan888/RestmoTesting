@@ -1,0 +1,145 @@
+/*
+Theme Name: THEME_NAME_UPPERCASE
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+.main-navigation > ul > li{
+	margin-right: 0;
+}
+.main-navigation > ul > li:first-child{
+	margin-left: 29px;
+}
+.main-navigation > ul > li:last-child{
+	margin-left: 0;
+}
+.main-navigation ul ul.sub-menu{
+	right: -32px;
+	left: auto;
+}
+.main-navigation ul ul.sub-menu:after{
+	right: 50px;
+	left: auto;
+}
+.main-navigation ul li ul.sub-menu ul.sub-menu{
+	top: -12px;
+}
+.main-navigation ul li ul.sub-menu ul.sub-menu{
+	right: 100%;
+	left: auto;
+}
+.main-navigation ul li li a{
+	text-align: right;
+}
+.main-navigation > ul > li.menu-item-has-children > a{
+	padding-left: 17px;
+	padding-right: 0;
+}
+.main-navigation ul > li.menu-item-has-children > a:after, .main-navigation > ul > li.menu-item-has-children:last-child > a:after{
+	left: 0;
+	right: auto;
+}
+.main-navigation ul > li li.menu-item-has-children > a:after{
+	content: '\f103';
+	left: 28px;
+	right: auto;
+}
+.post-box .entry-meta .btn-details{
+	left: 15px;
+	right: auto;
+}
+.post-slider .post-box .entry-meta .btn-details{
+	right: unset;
+}
+.post-box .entry-media .post-cat{
+	right: 40px;
+	left: auto;
+}
+.author-widget_social a{
+	margin-right: 0;
+	margin-left: 7px;
+}
+.author-widget_social a:last-child{
+	margin-left: 0;
+}
+.blog-post .tagcloud{
+	float: right;
+}
+.blog-post .share-post{
+	float: left;
+}
+.blog-post .author-bio .author-image{
+	float: right;
+    margin-left: 40px;
+    margin-right: 0;
+}
+.post-nav .post-prev{
+	float: right;
+	text-align: right;
+}
+.post-nav .post-next{
+	float: left;
+	text-align: left;
+}
+.post-nav .post-prev .thumb-post{
+	margin-left: 25px;
+    margin-right: 0;
+}
+.post-nav .post-next .thumb-post{
+	margin-left: 0;
+    margin-right: 25px;
+}
+.post-nav .post-next .thumb-post:before{
+	left: 0;
+    right: auto;
+}
+.page-pagination{
+	padding: 0;
+}
+.page-pagination li a, .page-pagination li span{
+	margin-right: 0;
+	margin-left: 5px;
+}
+.line-progress .percent{
+	left: -19px;
+    right: auto;
+}
+.mmenu-wrapper .mobile_mainmenu ul{
+	width: 100%;
+}
+.mmenu-wrapper .mobile_mainmenu ul.sub-menu{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mmenu-wrapper .mobile_mainmenu li a{
+	padding-right: 15px;
+}
+.mmenu-wrapper .mobile_mainmenu > li > a{
+	padding-right: 0;
+}
+.mmenu-wrapper .mobile_mainmenu li{
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mmenu-wrapper .mobile_mainmenu li a{
+	border-bottom:none;
+}
+.mmenu-wrapper .mobile_mainmenu > li.menu-item-has-children .arrow i{
+	transform: rotate(180deg);
+}
+.mmenu-wrapper .mobile_mainmenu > li.menu-item-has-children .arrow{
+	position: static;
+}
