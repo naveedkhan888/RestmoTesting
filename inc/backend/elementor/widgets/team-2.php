@@ -482,7 +482,7 @@ class Restimo_Team2 extends Widget_Base{
 
 		<div class="xp-team team-2 circle-social">
 			<div class="team-thumb">
-				<?php if( $settings['member_image']['url'] ) { echo $photo; } ?>
+				<?php if ( ! empty( $settings['member_image']['url'] ) ) { echo wp_kses_post( $photo ); } ?>
 			</div>
 			<div class="team-info">
 				<?php if ( $settings['member_name'] ) { echo '<h6 class="tname">' .$tname. '</h6>'; } ?>
@@ -493,7 +493,7 @@ class Restimo_Team2 extends Widget_Base{
 						<?php if ( ! empty( $social['social_link'] ) ) : ?>
 							<a <?php if($social['social_link']['is_external'])
 							{ echo 'target="_blank"'; }else{ echo 'rel="nofollow"';}?> 
-									href="<?php echo $social['social_link']['url'];?>" class="<?php echo strtolower($social['title']);?>">
+									href="<?php echo esc_url( $social['social_link']['url'] ); ?>" class="<?php echo esc_attr( strtolower( $social['title'] ) ); ?>">
 									<?php Icons_Manager::render_icon( $social['social_icon'], [ 'aria-hidden' => 'true' ] ); ?>
 							</a>
 						<?php endif; ?>
