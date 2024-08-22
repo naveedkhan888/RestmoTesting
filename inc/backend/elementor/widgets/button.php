@@ -280,11 +280,11 @@ class Restimo_Button extends Widget_Base{
 
 		?>
 		<div class="xp-button">
-			<a <?php echo $this->get_render_attribute_string( 'button' ); ?>><?php echo $settings['text']; ?></a>
+			<a <?php echo $this->get_render_attribute_string( 'button' ); ?>><?php echo esc_html( $settings['text'] ); ?></a>
 	    </div>
 	    <?php
 	}
 
 }
 // After the Schedule class is defined, I must register the new widget class with Elementor:
-Plugin::instance()->widgets_manager->register( new Restimo_Button() );
+Plugin::instance()->widgets_manager->register( new Restimo_Button() );283

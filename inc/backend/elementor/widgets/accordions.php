@@ -260,11 +260,12 @@ class Restimo_Accordions extends Widget_Base{
 		<div class="xp-accordions">
 			<?php if ( $settings['xp_accs'] ) : foreach ( $settings['xp_accs'] as $key => $accs ) { ?>
 			<div class="acc-item">
-				<div class="acc-toggle flex-middle" data-default="<?php if( $settings['item_active'] == $key + 1 ) echo esc_attr('yes') ?>"><?php echo $accs['acc_title']; ?> 
-					<i class="xp-flaticon-arrowsoutline"></i>
+				<div class="acc-toggle flex-middle" data-default="<?php echo esc_attr( $settings['item_active'] == $key + 1 ? 'yes' : '' ); ?>">
+				     <?php echo esc_html( $accs['acc_title'] ); ?>
+				    <i class="xp-flaticon-arrowsoutline"></i>
 				</div>
 				<div class="acc-content">
-					<?php echo $accs['acc_content']; ?>
+					<?php echo wp_kses_post( $accs['acc_content'] ); ?>
 				</div>
 			</div>
 			<?php } endif; ?>
