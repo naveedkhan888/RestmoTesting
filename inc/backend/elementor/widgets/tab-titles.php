@@ -228,7 +228,9 @@ class Restimo_Tab_Titles extends Widget_Base{
 		<div class="tab-titles">
 			<?php foreach ( $settings['title_boxes'] as $box ) : ?>
 			<div class="title-item font-second">
-				<a href="<?php echo esc_url($box['title_link']); ?>"><?php echo $box['titles']; ?></a>
+				<a href="<?php echo esc_url( $box['title_link'] ); ?>">
+				    <?php echo esc_html( $box['titles'] ); ?>
+				</a>
 			</div>
 			<?php endforeach; ?>
 		</div>

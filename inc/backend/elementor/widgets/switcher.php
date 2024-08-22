@@ -176,12 +176,12 @@ class Restimo_Switcher extends Widget_Base{
 		?>
 
 		<div class="xp-switcher">
-            <span class="l-switch active"><?php echo $settings['title_left']; ?></span>
+            <span class="l-switch active"><?php echo esc_html( $settings['title_left'] ); ?></span>
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
-			<span class="r-switch"><?php echo $settings['title_right']; ?></span>
+			<span class="r-switch"><?php echo esc_html( $settings['title_right'] ); ?></span>
 		</div>
 
 	    <?php

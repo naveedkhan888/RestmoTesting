@@ -591,7 +591,18 @@ class Restimo_Post_Carousel extends Widget_Base{
 
 		?>
 
-		<div class="post-slider" data-loop="<?php echo $settings['loop']; ?>" data-auto="<?php echo $settings['autoplay']; ?>" data-time="<?php echo $settings['timeout']['size']; ?>" data-arrows="<?php echo $settings['arrows']; ?>" data-dots="<?php echo $settings['dots']; ?>" data-show="<?php echo esc_attr( $shows ); ?>" data-tshow="<?php echo esc_attr( $tshows ); ?>" data-mshow="<?php echo esc_attr( $mshows ); ?>" data-gaps="<?php echo esc_attr( $gaps ); ?>" data-tgaps="<?php echo esc_attr( $tgaps ); ?>" data-mgaps="<?php echo $mgaps; ?>">
+		<div class='post-slider'
+    data-loop='<?php echo esc_attr( $settings['loop'] ); ?>'
+    data-auto='<?php echo esc_attr( $settings['autoplay'] ); ?>'
+    data-time='<?php echo esc_attr( $settings['timeout']['size'] ); ?>'
+    data-arrows='<?php echo esc_attr( $settings['arrows'] ); ?>'
+    data-dots='<?php echo esc_attr( $settings['dots'] ); ?>'
+    data-show='<?php echo esc_attr( $shows ); ?>'
+    data-tshow='<?php echo esc_attr( $tshows ); ?>'
+    data-mshow='<?php echo esc_attr( $mshows ); ?>'
+    data-gaps='<?php echo esc_attr( $gaps ); ?>'
+    data-tgaps='<?php echo esc_attr( $tgaps ); ?>'
+    data-mgaps='<?php echo esc_attr( $mgaps ); ?>'>
 			<div class="owl-carousel owl-theme">
 	        <?php
 	        	$number_show = (!empty($settings['post_num']) ? $settings['post_num'] : 9);

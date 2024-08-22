@@ -600,7 +600,9 @@ class Restimo_Pricing_Table extends Widget_Base{
 				<?php if( $settings['price'] ){ echo '<h2>' .$settings['price']. '</h2>'; } ?>
 				<?php if( $settings['price_for'] ){ echo '<p>'. esc_html( $settings['price_for'] ). '</p>'; } ?>
 				<?php if( $settings['short_text'] ){ echo '<div class="short-text">'. $settings['short_text']. '</div>'; } ?>
-				<div class="details <?php if( !$settings['icon_list'] ) echo 'no-icon'; ?>"><?php echo $settings['details']; ?></div>
+				<div class='details <?php echo esc_attr( !$settings['icon_list'] ? 'no-icon' : '' ); ?>'>
+				    <?php echo wp_kses_post( $settings['details'] ); ?>
+				</div>
 				<?php if( $settings['label_link'] ){ echo '<a ' .$this->get_render_attribute_string( 'button' ). '>' .$settings['label_link']. '</a>'; } ?>
 			</div>
 		</div>
