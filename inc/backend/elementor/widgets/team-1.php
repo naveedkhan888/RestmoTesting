@@ -550,7 +550,7 @@ class Restimo_Team extends Widget_Base{
 
 		?>
 
-		<div <?php echo $this->get_render_attribute_string( 'team-box' ); ?>>
+		<div <?php echo wp_kses_post($this->get_render_attribute_string( 'team-box' )); ?>>
 			<div class="team-thumb">
 				<?php if ( ! empty( $settings['member_image']['url'] ) ) { echo wp_kses_post( $photo ); } ?>
 				<?php if ( ! empty( $settings['social_share'] ) ) : ?>
