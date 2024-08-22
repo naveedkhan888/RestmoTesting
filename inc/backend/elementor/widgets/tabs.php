@@ -281,12 +281,14 @@ class Restimo_Tabs extends Widget_Base{
 			<?php $random = rand(1,1000); if ( $settings['xp_tabs'] ) : ?>
 			<ul class="tabs-heading unstyle">
 				<?php $i = 1; foreach ( $settings['xp_tabs'] as $tabs ) { ?>
-				<li class="tab-link" data-tab="tab-<?php echo esc_attr($i.$random); ?>"><?php echo $tabs['tab_title']; ?></li>
+				<li class='tab-link' data-tab='tab-<?php echo esc_attr( $i . $random ); ?>'>
+				    <?php echo esc_html( $tabs['tab_title'] ); ?>
+				</li>
 				<?php $i++; } ?>
 			</ul>
 			<?php $j = 1; foreach ( $settings['xp_tabs'] as $tabs ) { ?>
 			<div id="tab-<?php echo esc_attr($j.$random); ?>" class="tab-content">
-				<?php echo $tabs['tab_content']; ?>
+				<?php echo wp_kses_post( $tabs['tab_content'] ); ?>
 			</div>
 			<?php $j++; } endif; ?>
 	    </div>
