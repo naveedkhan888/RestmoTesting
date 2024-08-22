@@ -29,7 +29,7 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
 	<?php do_action( 'woocommerce_widget_product_item_start', $args ); ?>
 	<div class="widget-prthumb">
 		<a href="<?php echo esc_url( $product->get_permalink() ); ?>">
-			<?php echo $product->get_image(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>		
+			<?php echo wp_kses_post( $product->get_image() ); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>		
 		</a>
 	</div>
 	
@@ -40,7 +40,7 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
 			<?php echo wc_get_rating_html( $product->get_average_rating() ); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		<?php endif; ?>
 
-		<span class="price"><?php echo $product->get_price_html(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+		<span class="price"><?php echo wp_kses_post( $product->get_price_html() ); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 	</div>
 	<?php do_action( 'woocommerce_widget_product_item_end', $args ); ?>
 </li>
