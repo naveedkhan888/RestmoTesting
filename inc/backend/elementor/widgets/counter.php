@@ -231,7 +231,7 @@ class Restimo_Counter extends Widget_Base{
         	<div class="c-number">
         		<span class="num" data-to="<?php echo esc_attr( $settings['number'] ); ?>" data-time= "<?php echo esc_attr( $settings['time']['size'] ); ?>"></span><?php if( $settings['after_number'] ) { echo '<span>' .$settings['after_number']. '</span>'; } ?>
         	</div>
-        	<?php if( $settings['title'] ) { ?><h6><?php echo esc_html( $settings['title'] ); ?></h6><?php } ?>     				        
+        	<?php if( $settings['title'] ) { ?><h6><?php echo wp_kses_post( $settings['title'] ); ?></h6><?php } ?>     				        
 	    </div>
 	    <?php
 	}
