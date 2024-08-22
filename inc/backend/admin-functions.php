@@ -24,7 +24,7 @@ add_filter('upload_mimes', 'restimo_mime_types', 10, 1);
  * add group fonts
  */
 add_filter( 'elementor/fonts/groups', function( $font_groups ) {
-  $font_groups['restimo_fonts'] = __( 'Restimo Fonts' );
+  $font_groups['restimo_fonts'] = __( 'Restimo Fonts', 'restimo' );
   return $font_groups;
 } );
 

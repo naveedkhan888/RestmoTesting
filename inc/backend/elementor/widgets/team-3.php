@@ -562,7 +562,7 @@ class Restimo_Team3 extends Widget_Base{
 		}
 		?>
 
-		<div <?php echo $this->get_render_attribute_string('team-box'); ?>>
+		<div <?php echo wp_kses_post($this->get_render_attribute_string('team-box')); ?>>
 			<div class="team-thumb">
 								<?php if ( $settings['member_image']['url'] ) { echo wp_kses_post( $photo ); } ?>
 			</div>
@@ -580,7 +580,7 @@ class Restimo_Team3 extends Widget_Base{
 							] );
 						?>
 						<?php if ( ! empty( $social['social_link'] ) ) : ?>
-							<a <?php echo $this->get_render_attribute_string($link_key); ?> <?php if($social['social_link']['is_external'])
+							<a <?php echo wp_kses_post($this->get_render_attribute_string($link_key)); ?> <?php if($social['social_link']['is_external'])
 							{ echo 'target="_blank"'; }else{ echo 'rel="nofollow"';}?> 
 									href="<?php echo esc_url( $social['social_link']['url'] );?>"">
 									<?php Icons_Manager::render_icon( $social['social_icon'], [ 'aria-hidden' => 'true' ] ); ?>
