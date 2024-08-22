@@ -334,7 +334,7 @@ function restimo_user_contact_methods( $user_contact ) {
     $user_contact['github']     = esc_html__( 'Github Profile', 'restimo' ); 
     return $user_contact; 
 };
-add_filter( 'user_contactmethods', 'restimo_user_contact_methods' );
+//add_filter( 'user_contactmethods', 'restimo_user_contact_methods' );
 
 function restimo_author_info_box() {
 
