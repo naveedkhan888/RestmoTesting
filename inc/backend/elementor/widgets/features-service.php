@@ -496,7 +496,7 @@ class Restimo_Features_Service extends Widget_Base{
 								<h4><?php echo esc_html( $data['fservice_title'] ); ?></h4>
 							</div>
 							<div class="features-service-desc">
-								<?php if($data['fservice_content']){ ?><p><?php echo wp_kses_post( $data['fservice_content'] ); ?></p><?php } ?>
+								<?php if($data['fservice_content']){ ?><p><?php echo wp_kses_post( $data['fservice_content'] ); ?></p><?php }?>
 							</div>
 							<?php if( $data['link']['url'] ) { ?>
 							<div class="flex-middle features-service-link">
