@@ -752,7 +752,18 @@ class Restimo_Team_Carousel extends Widget_Base{
 		$mgaps  = isset( $settings['w_gaps_mobile']['size'] ) && is_numeric( $settings['w_gaps_mobile']['size'] ) ? $settings['w_gaps_mobile']['size'] : $tgaps;
 
 		?>
-		<div class="xp-team-carousel" data-loop="<?php echo $settings['loop']; ?>" data-auto="<?php echo $settings['autoplay']; ?>" data-time="<?php echo $settings['timeout']['size']; ?>" data-arrows="<?php echo $settings['arrows']; ?>" data-dots="<?php echo $settings['dots']; ?>" data-show="<?php echo esc_attr( $shows ); ?>" data-tshow="<?php echo esc_attr( $tshows ); ?>" data-mshow="<?php echo esc_attr( $mshows ); ?>" data-gaps="<?php echo esc_attr( $gaps ); ?>" data-tgaps="<?php echo esc_attr( $tgaps ); ?>" data-mgaps="<?php echo esc_attr( $mgaps ); ?>">
+		<div class="xp-team-carousel"
+    data-loop="<?php echo esc_attr( $settings['loop'] ); ?>"
+    data-auto="<?php echo esc_attr( $settings['autoplay'] ); ?>"
+    data-time="<?php echo esc_attr( $settings['timeout']['size'] ); ?>"
+    data-arrows="<?php echo esc_attr( $settings['arrows'] ); ?>"
+    data-dots="<?php echo esc_attr( $settings['dots'] ); ?>"
+    data-show="<?php echo esc_attr( $shows ); ?>"
+    data-tshow="<?php echo esc_attr( $tshows ); ?>"
+    data-mshow="<?php echo esc_attr( $mshows ); ?>"
+    data-gaps="<?php echo esc_attr( $gaps ); ?>"
+    data-tgaps="<?php echo esc_attr( $tgaps ); ?>"
+    data-mgaps="<?php echo esc_attr( $mgaps ); ?>">
 			<div class="owl-carousel owl-theme">
 				<?php foreach ( $settings['members'] as $key => $mem ) : 
 					$photo_url = Group_Control_Image_Size::get_attachment_image_src( $mem['member_image']['id'], 'member_image_size', $settings );
@@ -775,7 +786,7 @@ class Restimo_Team_Carousel extends Widget_Base{
 				?>
 				<div class="xp-team team-2 circle-social">
 					<div class="team-thumb">
-						<?php if( $mem['member_image']['url'] ) { echo $photo; } ?>
+						<?php if( $mem['member_image']['url'] ) { echo wp_kses_post( $photo ); } ?>
 					</div>
 					<div class="team-info">
 						<?php if ( $mem['member_name'] ) { echo '<h6 class="tname">' .$tname. '</h6>'; } ?>
@@ -783,18 +794,18 @@ class Restimo_Team_Carousel extends Widget_Base{
 						<?php if ( $mem['socials'] ) : ?>
 						<div class="team-social">
 							<a <?php if( $mem['social1_link']['is_external'] ){ echo 'target="_blank"'; }else{ echo 'rel="nofollow"'; } ?> 
-								href="<?php echo $mem['social1_link']['url'];?>">
+								href="<?php echo esc_url( $mem['social1_link']['url'] ); ?>">
 								<?php Icons_Manager::render_icon( $mem['social1'], [ 'aria-hidden' => 'true' ] ); ?>
 							</a>
 							<?php if ( ! empty( $mem['social2'] ) ) : ?>
 							<a <?php if( $mem['social2_link']['is_external'] ){ echo 'target="_blank"'; }else{ echo 'rel="nofollow"'; }?> 
-								href="<?php echo $mem['social2_link']['url'];?>">
+								href="<?php echo esc_url( $mem['social2_link']['url'] ); ?>">
 								<?php Icons_Manager::render_icon( $mem['social2'], [ 'aria-hidden' => 'true' ] ); ?>
 							</a>
 							<?php endif; ?>
 							<?php if ( ! empty( $mem['social3'] ) ) : ?>
 							<a <?php if( $mem['social3_link']['is_external'] ){ echo 'target="_blank"'; }else{ echo 'rel="nofollow"'; }?> 
-								href="<?php echo $mem['social3_link']['url'];?>">
+								href="<?php echo esc_url( $mem['social3_link']['url'] ); ?>">
 								<?php Icons_Manager::render_icon( $mem['social3'], [ 'aria-hidden' => 'true' ] ); ?>
 							</a>
 							<?php endif; ?>

@@ -67,7 +67,7 @@ class Restimo_CountDown extends Widget_Base{
 			[
 				'label' => 'Date - Time',
 				'type' => Controls_Manager::DATE_TIME,
-				'default' => __( '2020-10-22 12:00', 'restimo' ),
+				'default' => __( '2025-10-26 12:00', 'restimo' ),
 			]
 		);
 
