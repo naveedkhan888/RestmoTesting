@@ -287,4 +287,4 @@ class Restimo_Button extends Widget_Base{
 
 }
 // After the Schedule class is defined, I must register the new widget class with Elementor:
-Plugin::instance()->widgets_manager->register( new Restimo_Button() );283
+Plugin::instance()->widgets_manager->register( new Restimo_Button() );
