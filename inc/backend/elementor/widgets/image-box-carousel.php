@@ -677,7 +677,19 @@ class Restimo_Image_Box_Carousel extends Widget_Base{
 		$mgaps  = isset( $settings['w_gaps_mobile']['size'] ) && is_numeric( $settings['w_gaps_mobile']['size'] ) ? $settings['w_gaps_mobile']['size'] : $tgaps;
 
 		?>
-		<div class="image-box-carousel" data-loop="<?php echo $settings['loop']; ?>" data-auto="<?php echo $settings['autoplay']; ?>" data-time="<?php echo $settings['timeout']['size']; ?>" data-arrows="<?php echo $settings['arrows']; ?>" data-dots="<?php echo $settings['dots']; ?>" data-show="<?php echo esc_attr( $shows ); ?>" data-tshow="<?php echo esc_attr( $tshows ); ?>" data-mshow="<?php echo esc_attr( $mshows ); ?>" data-gaps="<?php echo esc_attr( $gaps ); ?>" data-tgaps="<?php echo esc_attr( $tgaps ); ?>" data-mgaps="<?php echo esc_attr( $mgaps ); ?>">
+		<div class="image-box-carousel"
+    data-loop="<?php echo esc_attr( $settings['loop'] ); ?>"
+    data-auto="<?php echo esc_attr( $settings['autoplay'] ); ?>"
+    data-time="<?php echo esc_attr( $settings['timeout']['size'] ); ?>"
+    data-arrows="<?php echo esc_attr( $settings['arrows'] ); ?>"
+    data-dots="<?php echo esc_attr( $settings['dots'] ); ?>"
+    data-show="<?php echo esc_attr( $shows ); ?>"
+    data-tshow="<?php echo esc_attr( $tshows ); ?>"
+    data-mshow="<?php echo esc_attr( $mshows ); ?>"
+    data-gaps="<?php echo esc_attr( $gaps ); ?>"
+    data-tgaps="<?php echo esc_attr( $tgaps ); ?>"
+    data-mgaps="<?php echo esc_attr( $mgaps ); ?>"
+>
 			<div class="owl-carousel owl-theme">
 				<?php foreach ( $settings['image_boxes'] as $key => $boxes ) : 
 					$photo_url = Group_Control_Image_Size::get_attachment_image_src( $boxes['image_box']['id'], 'image_box_size', $settings );
@@ -702,9 +714,9 @@ class Restimo_Image_Box_Carousel extends Widget_Base{
 					$this->add_render_attribute( 'm_link'. $key, 'class', 'link-box font-second' );
 				?>
 				<div class="xp-image-box">
-					<?php if( $boxes['image_box']['url'] ) { echo $photo; } ?>
+					<?php if( $boxes['image_box']['url'] ) { echo wp_kses_post( $photo ); } ?>
 					<div class="content-box">
-						<?php if( $boxes['title_box'] ) { echo $tbox_html; } ?>
+						<?php if( $boxes['title_box'] ) { echo wp_kses_post( $tbox_html ); } ?>
 						<?php if( $boxes['content_box'] ) { echo '<p>' .$boxes['content_box']. '</p>'; } ?>
 					</div>
 					<?php if( $settings['label_link'] && $boxes['link_box']['url'] !== '' ){ echo '<a ' .$this->get_render_attribute_string( 'm_link'. $key ). '><span>' .$settings['label_link']. '</span><i class="xp-flaticon-trajectory"></i></a>'; } ?>

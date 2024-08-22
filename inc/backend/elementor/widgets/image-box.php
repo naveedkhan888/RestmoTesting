@@ -429,9 +429,9 @@ class Restimo_Image_Box extends Widget_Base{
 		?>
 
 		<div class="xp-image-box">
-			<?php echo $image_html; ?>
+			<?php echo wp_kses_post( $image_html ); ?>
 			<div class="content-box">
-				<?php if( $settings['title'] ) { echo $title_html; } ?>
+				<?php if ( $settings['title'] ) { echo wp_kses_post( $title_html ); } ?>
 				<?php if( $settings['des'] ) { echo '<p>' .$settings['des']. '</p>'; } ?>
 			</div>
 			<?php if( $settings['label_link'] ){ echo '<a ' .$this->get_render_attribute_string( 'button' ). '><span>' .$settings['label_link']. '</span><i class="xp-flaticon-trajectory"></i></a>'; } ?>
