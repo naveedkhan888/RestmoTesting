@@ -562,9 +562,9 @@ class Restimo_Team3 extends Widget_Base{
 		}
 		?>
 
-		<div <?php $this->get_render_attribute_string('team-box'); ?>>
+		<div <?php echo $this->get_render_attribute_string( 'team-box' ); ?>>
 			<div class="team-thumb">
-				<?php if ( $settings['member_image']['url'] ) { echo wp_kses_post( $photo ); } ?>
+				<?php if( $settings['member_image']['url'] ) { echo $photo; } ?>
 			</div>
 			<div class="team-info">
 				<?php if ( $settings['member_name'] ) { echo '<h6 class="tname">' .$tname. '</h6>'; } ?>
@@ -580,20 +580,10 @@ class Restimo_Team3 extends Widget_Base{
 							] );
 						?>
 						<?php if ( ! empty( $social['social_link'] ) ) : ?>
-							<a <?php $this->get_render_attribute_string($link_key); ?>
-							   <?php 
-							   // Safely output the attributes without altering the structure
-							   if ( $social['social_link']['is_external'] ) {
-							       echo 'target="_blank"'; 
-							   } else { 
-							       echo 'rel="nofollow"';
-							   } 
-							   ?> 
-							   href="<?php echo esc_url( $social['social_link']['url'] ); ?>">
-							   <?php 
-							   // Render the icon, assuming this method handles escaping internally
-							   Icons_Manager::render_icon( $social['social_icon'], [ 'aria-hidden' => 'true' ] ); 
-							   ?>
+							<a <?php echo $this->get_render_attribute_string( $link_key ); ?> <?php if($social['social_link']['is_external'])
+							{ echo 'target="_blank"'; }else{ echo 'rel="nofollow"';}?> 
+									href="<?php echo $social['social_link']['url'];?>"">
+									<?php Icons_Manager::render_icon( $social['social_icon'], [ 'aria-hidden' => 'true' ] ); ?>
 							</a>
 						<?php endif; ?>
 					<?php endforeach; ?>
