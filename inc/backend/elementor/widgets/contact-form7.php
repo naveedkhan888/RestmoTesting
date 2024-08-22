@@ -254,7 +254,7 @@ class Restimo_Contact_Form_7 extends Widget_Base {   //this name is added to plu
 
  		if(!empty($settings['cf7_redirect_page'])) {  ?>
  			<script>
- 			        var theform = document.querySelector('.restimo-cf7-<?php echo $v_veriable; ?>');
+ 			        var theform = document.querySelector('.restimo-cf7-<?php echo esc_js( $v_veriable ); ?>');
 						theform.addEventListener( 'wpcf7mailsent', function( event ) {
 					    location = '<?php echo get_permalink( $settings['cf7_redirect_page'] ); ?>';
 					}, false );

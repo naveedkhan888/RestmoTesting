@@ -248,10 +248,10 @@ class Restimo_Counter2 extends Widget_Base{
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<div class="xp-counter-2 icounter" data-counter="<?php echo $settings['number']; ?>">
+		<div class="xp-counter-2 icounter" data-counter="<?php echo esc_attr( $settings['number'] ); ?>">
 			<?php if ( ! empty( $settings['icon_font']['value'] ) ) { Icons_Manager::render_icon( $settings['icon_font'], [ 'aria-hidden' => 'true' ] ); } ?>
         	<div class="c-number font-second">
-        		<span class="num" data-to="<?php echo $settings['number']; ?>" data-time= "<?php echo $settings['time']['size']; ?>"></span><?php if( $settings['after_number'] ) { echo '<span>' .$settings['after_number']. '</span>'; } ?>
+        		<span class="num" data-to="<?php echo esc_attr( $settings['number'] ); ?>" data-time= "<?php echo esc_attr( $settings['time']['size'] ); ?>"></span><?php if( $settings['after_number'] ) { echo '<span>' .$settings['after_number']. '</span>'; } ?>
         	</div>
         	<?php if( $settings['title'] ) { echo '<p>' .$settings['title']. '</p>'; } ?>      				        
 	    </div>
