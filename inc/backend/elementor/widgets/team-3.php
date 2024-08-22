@@ -562,7 +562,7 @@ class Restimo_Team3 extends Widget_Base{
 		}
 		?>
 
-		<div <?php echo $this->get_render_attribute_string('team-box'); ?>>
+		<div <?php echo esc_attr($this->get_render_attribute_string('team-box')); ?>>
 			<div class="team-thumb">
 				<?php if ( $settings['member_image']['url'] ) { echo wp_kses_post( $photo ); } ?>
 			</div>
@@ -580,7 +580,7 @@ class Restimo_Team3 extends Widget_Base{
 							] );
 						?>
 						<?php if ( ! empty( $social['social_link'] ) ) : ?>
-							<a <?php echo $this->get_render_attribute_string($link_key); ?>
+							<a <?php echo esc_attr($this->get_render_attribute_string($link_key)); ?>
 							   <?php 
 							   // Safely output the attributes without altering the structure
 							   if ( $social['social_link']['is_external'] ) {
