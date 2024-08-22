@@ -625,7 +625,7 @@ class Restimo_Testimonials extends Widget_Base{
 					<?php if($testi['tcontent']) { echo '<div class="ttext">' .$testi['tcontent']. '</div>'; } ?>			
 					<div class="t-head flex-middle">
 						<?php if($testi['timage']['url']) { ?>
-							<div class="tphoto"><img src="<?php echo $testi['timage']['url']; ?>" alt="<?php echo $testi['tname']; ?>"></div>
+							<div class="tphoto"><img src="<?php echo esc_url( $testi['timage']['url'] ); ?>" alt="<?php echo esc_attr( $testi['tname'] ); ?>"></div>
 						<?php } ?>
 						<div class="tinfo">
 							<?php if($testi['tname']) { echo '<h6>' .$testi['tname']. '</h6>'; } ?>
