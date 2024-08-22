@@ -103,7 +103,9 @@ class Restimo_Cart extends Widget_Base{
 		?>
 		<?php if ( ! $widget_cart_is_hidden ) : ?>
 			<div class="xptf-cart xptf-cta-header">
-				<a class="cart-contents xp-minicart" href="<?php echo $cart_url; ?>" title="<?php esc_attr_e( 'View your shopping cart', 'restimo' ); ?>"><i class="xp-flaticon-business"></i> <span class="count"><?php echo $product_count; ?></span>
+				<a class="cart-contents xp-minicart" href="<?php echo esc_url( $cart_url ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'restimo' ); ?>">
+				    <i class="xp-flaticon-business"></i>
+				    <span class="count"><?php echo esc_html( $product_count ); ?></span>
 				</a>
 				<?php if( !is_cart() && !is_checkout() ) { ?>
 				<div class="site-header-cart">
