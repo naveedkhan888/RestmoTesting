@@ -47,7 +47,7 @@ get_header(); ?>
 								?>
 							</div>
 							<?php if( $c >= restimo_get_option('portfolio_posts_per_page') ) { ?>
-								<div class="btn-block"><span id="btn-loadmore" class="btn-loadmore xptf-btn" data-loaded="<?php esc_attr_e('Load More','restimo'); ?>" data-loading="<?php esc_attr_e('Loading','restimo'); ?>"><?php esc_attr_e('Load More','restimo'); ?></span></div>							
+								<div class="btn-block"><span id="btn-loadmore" class="btn-loadmore xptf-btn" data-loaded="<?php esc_attr_e('Load More', 'restimo'); ?>" data-loading="<?php esc_attr_e('Loading', 'restimo'); ?>"> <?php esc_html_e('Load More', 'restimo'); ?></span></div>							
 							<?php } ?>
 						<?php 	
 						else :
