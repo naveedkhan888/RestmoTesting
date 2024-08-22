@@ -46,7 +46,7 @@ function restimo_header_class() {
 		}
 	}
 	
-    echo $header_classes;
+    echo esc_attr($header_classes);
 }
 
 /**

@@ -414,7 +414,7 @@ function restimo_author_info_box() {
     echo '<div class="author-bio" >' . $author_details . '</div>';
 }
 /** Allow HTML in author bio section **/
-remove_filter('pre_user_description', 'wp_filter_kses');
+//remove_filter('pre_user_description', 'wp_filter_kses');
 
 /** Related Posts **/
 function restimo_related_posts() {
