@@ -492,15 +492,15 @@ class Restimo_Features_Service extends Widget_Base{
 					<div class="features-service-item" <?php if( $key === 0 ){ echo 'data-default="yes"'; } ?>>
 						<div class="features-service-content">
 							<div class="features-service-title">
-								<span class="features-service-number"><?php echo $data['fservice_number']; ?></span>
-								<h4><?php echo $data['fservice_title']; ?></h4>
+								<span class='features-service-number'><?php echo esc_html( $data['fservice_number'] ); ?></span>
+								<h4><?php echo esc_html( $data['fservice_title'] ); ?></h4>
 							</div>
 							<div class="features-service-desc">
-								<?php if($data['fservice_content']){ ?><p><?php echo $data['fservice_content']; ?></p><?php } ?>
+								<?php if( ! empty( $data['fservice_content'] ) ) { ?><p><?php echo esc_html( $data['fservice_content'] ); ?></p><?php } ?>
 							</div>
 							<?php if( $data['link']['url'] ) { ?>
 							<div class="flex-middle features-service-link">
-								<a <?php echo $this->get_render_attribute_string('link' . $key); ?>>
+								<a <?php echo wp_kses_post($this->get_render_attribute_string('link' . $key)); ?>>
 									<span class="btn-text"><?php echo esc_html($settings['btn_text']); ?></span>
 									<i class="xp-flaticon-trajectory"></i>
 								</a>
@@ -511,7 +511,7 @@ class Restimo_Features_Service extends Widget_Base{
 						<div class="features-service-img-reposive" style="background-image: url(<?php echo esc_url( $url ); ?>)"></div>
 					</div>
 					<figure class="features-service-img">
-						<?php if( $data['fservice_image']['url'] ) { echo $photo; } ?>
+						<?php if( $data['fservice_image']['url'] ) { echo esc_html($photo); } ?>
 					</figure>
 			<?php } endif; ?>
 		</div>
