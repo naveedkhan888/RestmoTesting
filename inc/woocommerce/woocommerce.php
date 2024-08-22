@@ -199,7 +199,7 @@ if ( ! function_exists( 'restimo_woocommerce_cart_link' ) ) {
 			<?php
 			$item_count_text = sprintf(
 				/* translators: number of items in the mini cart. */
-				_n( '%d', '%d', WC()->cart->get_cart_contents_count(), '_s' ),
+				_n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'restimo' ),
 				WC()->cart->get_cart_contents_count()
 			);
 			?>

@@ -58,7 +58,7 @@ class Restimo_Post_Carousel extends Widget_Base{
 		$this->add_control(
 			'exc',
 			[
-				'label' => esc_html__( 'Excerpt Length', 'theratio' ),
+				'label' => esc_html__( 'Excerpt Length', 'restimo' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => '0',
 			]
@@ -66,12 +66,12 @@ class Restimo_Post_Carousel extends Widget_Base{
 		$this->add_control(
 			'post_thumbnail',
 			[
-				'label' => __( 'Thumbnail Image Size', 'onum' ),
+				'label' => __( 'Thumbnail Image Size', 'restimo' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'restimo-post-thumbnail-grid',
 				'options' => [
-					'restimo-post-thumbnail-grid' => __( 'Default', 'onum' ),
-					'full' => __( 'Full', 'onum' ),
+					'restimo-post-thumbnail-grid' => __( 'Default', 'restimo' ),
+					'full' => __( 'Full', 'restimo' ),
 				],
 			]
 		);

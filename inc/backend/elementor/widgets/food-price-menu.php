@@ -10,7 +10,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Food Price Menu', 'plugin-name' );
+        return __( 'Food Price Menu', 'restimo' );
     }
 
     public function get_icon() {
@@ -26,7 +26,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __( 'Content', 'plugin-name' ),
+                'label' => __( 'Content', 'restimo' ),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -36,9 +36,9 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $repeater->add_control(
             'title',
             [
-                'label' => __( 'Title', 'plugin-name' ),
+                'label' => __( 'Title', 'restimo' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => __( 'Menu Item' , 'plugin-name' ),
+                'default' => __( 'Menu Item' , 'restimo' ),
                 'label_block' => true,
             ]
         );
@@ -46,19 +46,19 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $repeater->add_control(
             'title_tag',
             [
-                'label' => __( 'Title HTML Tag', 'plugin-name' ),
+                'label' => __( 'Title HTML Tag', 'restimo' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'h3',
                 'options' => [
-                    'h1' => __( 'H1', 'plugin-name' ),
-                    'h2' => __( 'H2', 'plugin-name' ),
-                    'h3' => __( 'H3', 'plugin-name' ),
-                    'h4' => __( 'H4', 'plugin-name' ),
-                    'h5' => __( 'H5', 'plugin-name' ),
-                    'h6' => __( 'H6', 'plugin-name' ),
-                    'p' => __( 'p', 'plugin-name' ),
-                    'span' => __( 'span', 'plugin-name' ),
-                    'div' => __( 'div', 'plugin-name' ),
+                    'h1' => __( 'H1', 'restimo' ),
+                    'h2' => __( 'H2', 'restimo' ),
+                    'h3' => __( 'H3', 'restimo' ),
+                    'h4' => __( 'H4', 'restimo' ),
+                    'h5' => __( 'H5', 'restimo' ),
+                    'h6' => __( 'H6', 'restimo' ),
+                    'p' => __( 'p', 'restimo' ),
+                    'span' => __( 'span', 'restimo' ),
+                    'div' => __( 'div', 'restimo' ),
                 ],
             ]
         );
@@ -66,9 +66,9 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $repeater->add_control(
             'description',
             [
-                'label' => __( 'Description', 'plugin-name' ),
+                'label' => __( 'Description', 'restimo' ),
                 'type' => Controls_Manager::TEXTAREA,
-                'default' => __( 'Menu Item Description' , 'plugin-name' ),
+                'default' => __( 'Menu Item Description' , 'restimo' ),
                 'show_label' => true,
             ]
         );
@@ -76,19 +76,19 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $repeater->add_control(
             'description_tag',
             [
-                'label' => __( 'Description HTML Tag', 'plugin-name' ),
+                'label' => __( 'Description HTML Tag', 'restimo' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'p',
                 'options' => [
-                    'h1' => __( 'H1', 'plugin-name' ),
-                    'h2' => __( 'H2', 'plugin-name' ),
-                    'h3' => __( 'H3', 'plugin-name' ),
-                    'h4' => __( 'H4', 'plugin-name' ),
-                    'h5' => __( 'H5', 'plugin-name' ),
-                    'h6' => __( 'H6', 'plugin-name' ),
-                    'p' => __( 'p', 'plugin-name' ),
-                    'span' => __( 'span', 'plugin-name' ),
-                    'div' => __( 'div', 'plugin-name' ),
+                    'h1' => __( 'H1', 'restimo' ),
+                    'h2' => __( 'H2', 'restimo' ),
+                    'h3' => __( 'H3', 'restimo' ),
+                    'h4' => __( 'H4', 'restimo' ),
+                    'h5' => __( 'H5', 'restimo' ),
+                    'h6' => __( 'H6', 'restimo' ),
+                    'p' => __( 'p', 'restimo' ),
+                    'span' => __( 'span', 'restimo' ),
+                    'div' => __( 'div', 'restimo' ),
                 ],
             ]
         );
@@ -96,9 +96,9 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $repeater->add_control(
             'price',
             [
-                'label' => __( 'Price', 'plugin-name' ),
+                'label' => __( 'Price', 'restimo' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => __( '$10' , 'plugin-name' ),
+                'default' => __( '$10' , 'restimo' ),
                 'label_block' => true,
             ]
         );
@@ -106,7 +106,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $repeater->add_control(
             'image',
             [
-                'label' => __( 'Image', 'plugin-name' ),
+                'label' => __( 'Image', 'restimo' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -117,9 +117,9 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $repeater->add_control(
             'link',
             [
-                'label' => __( 'Link', 'plugin-name' ),
+                'label' => __( 'Link', 'restimo' ),
                 'type' => Controls_Manager::URL,
-                'placeholder' => __( 'https://your-link.com', 'plugin-name' ),
+                'placeholder' => __( 'https://your-link.com', 'restimo' ),
                 'show_external' => true,
                 'default' => [
                     'url' => '',
@@ -132,14 +132,14 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'list',
             [
-                'label' => __( 'List Items', 'plugin-name' ),
+                'label' => __( 'List Items', 'restimo' ),
                 'type' => Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [
                     [
-                        'title' => __( 'Menu Item #1', 'plugin-name' ),
-                        'description' => __( 'Description for menu item #1', 'plugin-name' ),
-                        'price' => __( '$10', 'plugin-name' ),
+                        'title' => __( 'Menu Item #1', 'restimo' ),
+                        'description' => __( 'Description for menu item #1', 'restimo' ),
+                        'price' => __( '$10', 'restimo' ),
                     ],
                 ],
                 'title_field' => '{{{ title }}}',
@@ -152,7 +152,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->start_controls_section(
             'style_section',
             [
-                'label' => __( 'Style', 'plugin-name' ),
+                'label' => __( 'Style', 'restimo' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -161,7 +161,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'title_color',
             [
-                'label' => __( 'Title Color', 'plugin-name' ),
+                'label' => __( 'Title Color', 'restimo' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .title' => 'color: {{VALUE}}',
@@ -173,7 +173,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'title_typography',
-                'label' => __( 'Title Typography', 'plugin-name' ),
+                'label' => __( 'Title Typography', 'restimo' ),
                 'selector' => '{{WRAPPER}} .title',
             ]
         );
@@ -182,7 +182,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'description_color',
             [
-                'label' => __( 'Description Color', 'plugin-name' ),
+                'label' => __( 'Description Color', 'restimo' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .description' => 'color: {{VALUE}}',
@@ -194,7 +194,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'description_typography',
-                'label' => __( 'Description Typography', 'plugin-name' ),
+                'label' => __( 'Description Typography', 'restimo' ),
                 'selector' => '{{WRAPPER}} .description',
             ]
         );
@@ -203,7 +203,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'price_color',
             [
-                'label' => __( 'Price Color', 'plugin-name' ),
+                'label' => __( 'Price Color', 'restimo' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .price' => 'color: {{VALUE}}',
@@ -215,7 +215,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'price_typography',
-                'label' => __( 'Price Typography', 'plugin-name' ),
+                'label' => __( 'Price Typography', 'restimo' ),
                 'selector' => '{{WRAPPER}} .price',
             ]
         );
@@ -224,14 +224,14 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'separator_style',
             [
-                'label' => __( 'Separator Style', 'plugin-name' ),
+                'label' => __( 'Separator Style', 'restimo' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'solid' => __( 'Solid', 'plugin-name' ),
-                    'dotted' => __( 'Dotted', 'plugin-name' ),
-                    'dashed' => __( 'Dashed', 'plugin-name' ),
-                    'double' => __( 'Double', 'plugin-name' ),
-                    'none' => __( 'None', 'plugin-name' ),
+                    'solid' => __( 'Solid', 'restimo' ),
+                    'dotted' => __( 'Dotted', 'restimo' ),
+                    'dashed' => __( 'Dashed', 'restimo' ),
+                    'double' => __( 'Double', 'restimo' ),
+                    'none' => __( 'None', 'restimo' ),
                 ],
                 'default' => 'solid',
                 'selectors' => [
@@ -243,7 +243,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'separator_weight',
             [
-                'label' => __( 'Separator Weight', 'plugin-name' ),
+                'label' => __( 'Separator Weight', 'restimo' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -260,7 +260,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'separator_color',
             [
-                'label' => __( 'Separator Color', 'plugin-name' ),
+                'label' => __( 'Separator Color', 'restimo' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .separator' => 'border-bottom-color: {{VALUE}}',
@@ -272,14 +272,14 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'item_separator_style',
             [
-                'label' => __( 'Item Separator Style', 'plugin-name' ),
+                'label' => __( 'Item Separator Style', 'restimo' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'solid' => __( 'Solid', 'plugin-name' ),
-                    'dotted' => __( 'Dotted', 'plugin-name' ),
-                    'dashed' => __( 'Dashed', 'plugin-name' ),
-                    'double' => __( 'Double', 'plugin-name' ),
-                    'none' => __( 'None', 'plugin-name' ),
+                    'solid' => __( 'Solid', 'restimo' ),
+                    'dotted' => __( 'Dotted', 'restimo' ),
+                    'dashed' => __( 'Dashed', 'restimo' ),
+                    'double' => __( 'Double', 'restimo' ),
+                    'none' => __( 'None', 'restimo' ),
                 ],
                 'default' => 'solid',
                 'selectors' => [
@@ -291,7 +291,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'item_separator_weight',
             [
-                'label' => __( 'Item Separator Weight', 'plugin-name' ),
+                'label' => __( 'Item Separator Weight', 'restimo' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -308,7 +308,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_control(
             'item_separator_color',
             [
-                'label' => __( 'Item Separator Color', 'plugin-name' ),
+                'label' => __( 'Item Separator Color', 'restimo' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .item-separator' => 'border-top-color: {{VALUE}}',
@@ -320,7 +320,7 @@ class Food_Price_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'item_spacing',
             [
-                'label' => __( 'Item Spacing', 'plugin-name' ),
+                'label' => __( 'Item Spacing', 'restimo' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [

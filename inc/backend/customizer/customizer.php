@@ -583,27 +583,27 @@ function restimo_customize_settings() {
 		),
         'blog_style'           => array(
             'type'        => 'select',
-            'label'       => esc_html__( 'Blog Style', 'theratio' ),
+            'label'       => esc_html__( 'Blog Style', 'restimo' ),
             'section'     => 'blog_page',
             'default'     => 'list',
             'priority'    => 8,
-            'description' => esc_html__( 'Select style default for the blog page.', 'theratio' ),
+            'description' => esc_html__( 'Select style default for the blog page.', 'restimo' ),
             'choices'     => array(
-                'list' => esc_attr__( 'Blog List', 'theratio' ),
-                'grid' => esc_attr__( 'Blog Grid', 'theratio' ),
+                'list' => esc_attr__( 'Blog List', 'restimo' ),
+                'grid' => esc_attr__( 'Blog Grid', 'restimo' ),
             ),
         ),
         'blog_columns'           => array(
             'type'        => 'select',
-            'label'       => esc_html__( 'Blog Columns', 'theratio' ),
+            'label'       => esc_html__( 'Blog Columns', 'restimo' ),
             'section'     => 'blog_page',
             'default'     => 'pf_2_cols',
             'priority'    => 8,
-            'description' => esc_html__( 'Select columns default for the blog page.', 'theratio' ),
+            'description' => esc_html__( 'Select columns default for the blog page.', 'restimo' ),
             'choices'     => array(
-                'pf_2_cols' => esc_attr__( '2 Columns', 'theratio' ),
-                'pf_3_cols' => esc_attr__( '3 Columns', 'theratio' ),
-                'pf_4_cols' => esc_attr__( '4 Columns', 'theratio' ),
+                'pf_2_cols' => esc_attr__( '2 Columns', 'restimo' ),
+                'pf_3_cols' => esc_attr__( '3 Columns', 'restimo' ),
+                'pf_4_cols' => esc_attr__( '4 Columns', 'restimo' ),
             ),
             'active_callback' => array(
                 array(

@@ -154,7 +154,7 @@ class Restimo_IconBox_Grid extends Widget_Base{
 		$this->add_control(
 			'header_size',
 			[
-				'label' => __( 'Title HTML Tag', 'elementor' ),
+				'label' => __( 'Title HTML Tag', 'restimo' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',

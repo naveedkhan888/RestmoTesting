@@ -42,7 +42,7 @@ class Restimo_Team_Carousel extends Widget_Base{
 		$repeater->add_control(
 	       'member_image',
 	        [
-	            'label' => esc_html__( 'Photo', 'theratio' ),
+	            'label' => esc_html__( 'Photo', 'restimo' ),
 	            'type'  => Controls_Manager::MEDIA,
 		    ]
 		);
@@ -50,9 +50,9 @@ class Restimo_Team_Carousel extends Widget_Base{
 	    $repeater->add_control(
 		    'member_name',
 	      	[
-	          	'label' => esc_html__( 'Name', 'theratio' ),
+	          	'label' => esc_html__( 'Name', 'restimo' ),
 	          	'type'  => Controls_Manager::TEXT,
-				'default' => esc_html__( 'Peter Perish', 'theratio' ),
+				'default' => esc_html__( 'Peter Perish', 'restimo' ),
 				'label_block' => true
 	    	]
 	    );
@@ -60,28 +60,28 @@ class Restimo_Team_Carousel extends Widget_Base{
 	    $repeater->add_control(
 		    'member_extra',
 	      	[
-	          	'label' => esc_html__( 'Extra/Job', 'theratio' ),
+	          	'label' => esc_html__( 'Extra/Job', 'restimo' ),
 	          	'type'  => Controls_Manager::TEXTAREA,
-	          	'default' => esc_html__( 'co-founder of company', 'theratio' ),
+	          	'default' => esc_html__( 'co-founder of company', 'restimo' ),
 	    	]
 	    );
 
 	    $repeater->add_control(
 			'link',
 			[
-				'label' => __( 'Link To Details', 'theratio' ),
+				'label' => __( 'Link To Details', 'restimo' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://', 'theratio' ),
+				'placeholder' => __( 'https://', 'restimo' ),
 			]
 		);
 
 		$repeater->add_control(
 			'socials',
 			[
-				'label' => __( 'Socials', 'theratio' ),
+				'label' => __( 'Socials', 'restimo' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'theratio' ),
-				'label_off' => __( 'Hide', 'theratio' ),
+				'label_on' => __( 'Show', 'restimo' ),
+				'label_off' => __( 'Hide', 'restimo' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 				'separator' => 'before',
@@ -91,7 +91,7 @@ class Restimo_Team_Carousel extends Widget_Base{
 	    $repeater->add_control(
 		    'social1',
 	      	[
-	          	'label' => esc_html__( 'Icon Social 1', 'theratio' ),
+	          	'label' => esc_html__( 'Icon Social 1', 'restimo' ),
                 'type'  => Controls_Manager::ICONS,
                 'fa4compatibility' => 'icon',
 				'default' => [
@@ -106,9 +106,9 @@ class Restimo_Team_Carousel extends Widget_Base{
 	    $repeater->add_control(
 			'social1_link',
 			[
-				'label' => __( 'Link Social 1', 'theratio' ),
+				'label' => __( 'Link Social 1', 'restimo' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://twitter.com/', 'theratio' ),
+				'placeholder' => __( 'https://twitter.com/', 'restimo' ),
 				'condition' => [
 					'socials' => 'yes',
 				],
@@ -118,7 +118,7 @@ class Restimo_Team_Carousel extends Widget_Base{
 		$repeater->add_control(
 		    'social2',
 	      	[
-	          	'label' => esc_html__( 'Icon Social 2', 'theratio' ),
+	          	'label' => esc_html__( 'Icon Social 2', 'restimo' ),
                 'type'  => Controls_Manager::ICONS,
                 'fa4compatibility' => 'icon',
 				'default' => [
@@ -134,9 +134,9 @@ class Restimo_Team_Carousel extends Widget_Base{
 	    $repeater->add_control(
 			'social2_link',
 			[
-				'label' => __( 'Link Social 2', 'theratio' ),
+				'label' => __( 'Link Social 2', 'restimo' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://facebook.com/', 'theratio' ),
+				'placeholder' => __( 'https://facebook.com/', 'restimo' ),
 				'condition' => [
 					'socials' => 'yes',
 				],
@@ -146,7 +146,7 @@ class Restimo_Team_Carousel extends Widget_Base{
 		$repeater->add_control(
 		    'social3',
 	      	[
-	          	'label' => esc_html__( 'Icon Social 3', 'theratio' ),
+	          	'label' => esc_html__( 'Icon Social 3', 'restimo' ),
                 'type'  => Controls_Manager::ICONS,
                 'fa4compatibility' => 'icon',
 				'default' => [
@@ -162,9 +162,9 @@ class Restimo_Team_Carousel extends Widget_Base{
 	    $repeater->add_control(
 			'social3_link',
 			[
-				'label' => __( 'Link Social 3', 'theratio' ),
+				'label' => __( 'Link Social 3', 'restimo' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://pinterest.com/', 'theratio' ),
+				'placeholder' => __( 'https://pinterest.com/', 'restimo' ),
 				'condition' => [
 					'socials' => 'yes',
 				],
@@ -174,7 +174,7 @@ class Restimo_Team_Carousel extends Widget_Base{
 		$this->add_control(
 		    'members',
 		    [
-		        'label'       => esc_html__( 'Team', 'theratio' ),
+		        'label'       => esc_html__( 'Team', 'restimo' ),
 		        'type'        => Controls_Manager::REPEATER,
 		        'show_label'  => false,
 		        'default'     => [],

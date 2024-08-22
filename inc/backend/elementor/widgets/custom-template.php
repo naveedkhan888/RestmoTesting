@@ -14,7 +14,7 @@ class Custom_Template_Widget extends Widget_Base {
 
     // Return the widget title
     public function get_title() {
-        return __( 'Custom Template Widget', 'plugin-name' );
+        return __( 'Custom Template Widget', 'restimo' );
     }
 
     // Return the widget icon
@@ -33,7 +33,7 @@ class Custom_Template_Widget extends Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __( 'Content', 'plugin-name' ),
+                'label' => __( 'Content', 'restimo' ),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -42,7 +42,7 @@ class Custom_Template_Widget extends Widget_Base {
         $this->add_control(
             'template_id',
             [
-                'label' => __( 'Select Template', 'plugin-name' ),
+                'label' => __( 'Select Template', 'restimo' ),
                 'type' => Controls_Manager::SELECT2,
                 'options' => $this->get_elementor_templates(),
                 'default' => '',
