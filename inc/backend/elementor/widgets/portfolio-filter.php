@@ -849,7 +849,7 @@ class Restimo_PortfolioGrid extends Widget_Base{
 	            $the_query = new \WP_Query($args);
 				$count = $the_query->found_posts;
 	        ?>
-	        <div class="projects-grid <?php echo $settings['column'].' '.$settings['layout']; if( $settings['popup_thumb'] ) echo ' img-popup'; if( $settings['scale_thumb'] ) echo ' img-scale'; if( !$settings['show_cat'] ) echo ' no-cat'; if( !$settings['show_icon'] ) echo ' no-icon'; ?>" data-load="<?php echo $settings['p_more']; ?>" data-count="<?php echo $count; ?>">
+	        <div class="projects-grid <?php echo esc_attr( $settings['column'].' '.$settings['layout']; if( $settings['popup_thumb'] ) echo ' img-popup'; if( $settings['scale_thumb'] ) echo ' img-scale'; if( !$settings['show_cat'] ) echo ' no-cat'; if( !$settings['show_icon'] ) echo ' no-icon'; ?>" data-load="<?php echo esc_attr( $settings['p_more'] ); ?>" data-count="<?php echo esc_attr( $count ); ?>">
 			<div class="grid-sizer"></div>
 	            <?php
 	            if( $settings['project_cat'] ){
