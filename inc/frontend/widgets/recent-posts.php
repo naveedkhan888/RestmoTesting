@@ -30,11 +30,11 @@ class restimo_recent_news extends WP_Widget {
 
     // before and after widget arguments are defined by themes
 
-    echo htmlspecialchars_decode($args['before_widget']);
+    echo wp_specialchars_decode($args['before_widget']);
 
     if ( ! empty( $title ) ){
 
-    	echo htmlspecialchars_decode($args['before_title']) . $title . htmlspecialchars_decode($args['after_title']); 
+    	echo wp_specialchars_decode($args['before_title']) . $title . wp_specialchars_decode($args['after_title']); 
 
     }?>
             <ul class="recent-news clearfix">
@@ -97,7 +97,7 @@ class restimo_recent_news extends WP_Widget {
 
     <?php 
 
-    echo htmlspecialchars_decode($args['after_widget']);
+    echo wp_specialchars_decode($args['after_widget']);
 
     }
 
@@ -159,6 +159,6 @@ class restimo_recent_news extends WP_Widget {
 
 // Register and load the widget
 function restimo_wpb_recent_news() {
-	register_widget( 'restimo_recent_news' );
+	//register_widget( 'restimo_recent_news' );
 }
 add_action( 'widgets_init', 'restimo_wpb_recent_news' );
