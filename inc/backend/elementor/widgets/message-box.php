@@ -270,8 +270,8 @@ class Restimo_MessageBox extends Widget_Base{
 				<?php if ( ! empty( $settings['icon_font']['value'] ) ) { Icons_Manager::render_icon( $settings['icon_font'], [ 'aria-hidden' => 'true' ] ); } ?>
 	        </div>
 	        <div class="content-box">
-	            <h6><?php echo $settings['title']; ?></h6>
-	            <p><?php echo $settings['des']; ?></p>
+	            <h6><?php echo esc_html( $settings['title'] ); ?></h6>
+	            <p><?php echo esc_html( $settings['des'] ); ?></p>
 	        </div>
 	        <i class="xp-flaticon-cancel"></i>
 	    </div>
