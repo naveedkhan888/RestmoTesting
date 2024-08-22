@@ -587,7 +587,7 @@ class Restimo_IconBox2 extends Widget_Base{
 		        <?php if( $settings['icon_font'] != '' ) { Icons_Manager::render_icon( $settings['icon_font'], [ 'aria-hidden' => 'true' ] ); } ?>
 	        </div>
 	        <div class="content-box">
-				<?php if( $settings['title'] ) { echo $title_html; } ?>
+				<?php if( $settings['title'] ) { echo wp_kses_post( $title_html ); } ?>
 				<?php if( $settings['des'] ) { echo '<p>' .$settings['des']. '</p>'; } ?>
 			</div>
 	    </div>

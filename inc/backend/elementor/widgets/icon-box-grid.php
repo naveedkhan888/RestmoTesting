@@ -409,7 +409,7 @@ class Restimo_IconBox_Grid extends Widget_Base{
 								$title_html = sprintf( '<%1$s %2$s><a ' .$this->get_render_attribute_string( 'iconbox'.$key ). '>%3$s</a></%1$s>', $settings['header_size'], $this->get_render_attribute_string( 'heading' ), $title );
 							}
 			        	?>
-			            <?php if( ! empty( $boxes['title'] ) ) { echo $title_html; } ?>
+			            <?php if( ! empty( $boxes['title'] ) ) { echo wp_kses_post( $title_html ); } ?>
 			            <?php if( $boxes['des'] ) { echo '<p>' .$boxes['des']. '</p>'; } ?>
 			        </div>
 			    </div>

@@ -282,7 +282,7 @@ class Restimo_Heading extends Widget_Base{
 		?>
 		<div class="xp-heading">
 	        <?php if( ! empty( $settings['sub'] ) ) { echo '<span '.$this->get_render_attribute_string( 'subtitle' ).'>' .$settings['sub']. '</span>'; } ?>
-	        <?php if( ! empty( $settings['title'] ) ) { echo $title_html; } ?>
+	        <?php if( ! empty( $settings['title'] ) ) { echo wp_kses_post( $title_html ); } ?>
 	    </div>
 	    <?php
 	}

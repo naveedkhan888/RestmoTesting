@@ -227,11 +227,11 @@ class Restimo_Counter extends Widget_Base{
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-    	<div class="xp-counter icounter" data-counter="<?php echo $settings['number']; ?>">
+    	<div class='xp-counter icounter' data-counter='<?php echo esc_attr( $settings['number'] ); ?>'>
         	<div class="c-number">
-        		<span class="num" data-to="<?php echo $settings['number']; ?>" data-time= "<?php echo $settings['time']['size']; ?>"></span><?php if( $settings['after_number'] ) { echo '<span>' .$settings['after_number']. '</span>'; } ?>
+        		<span class="num" data-to="<?php echo esc_attr( $settings['number'] ); ?>" data-time= "<?php echo esc_attr( $settings['time']['size'] ); ?>"></span><?php if( $settings['after_number'] ) { echo '<span>' .$settings['after_number']. '</span>'; } ?>
         	</div>
-        	<?php if( $settings['title'] ) { ?><h6><?php echo $settings['title']; ?></h6><?php } ?>      				        
+        	<?php if( $settings['title'] ) { ?><h6><?php echo esc_html( $settings['title'] ); ?></h6><?php } ?>     				        
 	    </div>
 	    <?php
 	}
