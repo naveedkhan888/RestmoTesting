@@ -71,7 +71,7 @@ class restimo_recent_news extends WP_Widget {
                 <?php
                     $post_title   = get_the_title( $recent_post->ID );
                     $post_thumb   = get_the_post_thumbnail( $recent_post->ID, 'thumbnail' );
-                    $title        = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
+                    $title        = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)', 'restimo' );
                 ?>
                 <li class="clearfix"> 
                     <?php if( $post_thumb ) { ?>

@@ -96,9 +96,9 @@ class Restimo_Author_Widget extends WP_Widget {
         $dribbble = ! empty( $instance['dribbble'] ) ? $instance['dribbble'] : '';
     	?>
         <p>
-            <label for="<?php echo $this->get_field_id( 'image' ); ?>"><?php echo esc_html__( 'Avatar:' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'image' ); ?>"><?php echo esc_html__( 'Avatar:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" type="text" value="<?php echo esc_url( $image ); ?>" />
-            <button class="upload_image_button button button-primary"><?php echo esc_html__( 'Upload Image' ); ?></button>
+            <button class="upload_image_button button button-primary"><?php echo esc_html__( 'Upload Image', 'restimo' ); ?></button>
        </p>
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html__( 'Name:', 'restimo' ); ?></label>
@@ -109,35 +109,35 @@ class Restimo_Author_Widget extends WP_Widget {
             <textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'text' ) ); ?>" type="text" cols="30" rows="10"><?php echo esc_attr( $text ); ?></textarea>
         </p>
         <p>
-            <label for="<?php echo $this->get_field_name( 'facebook' ); ?>"><?php _e( 'Facebook URL:' ); ?></label>
+            <label for="<?php echo $this->get_field_name( 'facebook' ); ?>"><?php _e( 'Facebook URL:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'facebook' ); ?>" name="<?php echo $this->get_field_name( 'facebook' ); ?>" type="text" value="<?php echo esc_attr( $facebook ); ?>" />
         </p>
         <p>
-            <label for="<?php echo $this->get_field_name( 'twitter' ); ?>"><?php _e( 'Twitter URL:' ); ?></label>
+            <label for="<?php echo $this->get_field_name( 'twitter' ); ?>"><?php _e( 'Twitter URL:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'twitter' ); ?>" name="<?php echo $this->get_field_name( 'twitter' ); ?>" type="text" value="<?php echo esc_attr( $twitter ); ?>" />
         </p>
         <p>
-            <label for="<?php echo $this->get_field_name( 'google' ); ?>"><?php _e( 'Google Plus URL:' ); ?></label>
+            <label for="<?php echo $this->get_field_name( 'google' ); ?>"><?php _e( 'Google Plus URL:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'google' ); ?>" name="<?php echo $this->get_field_name( 'google' ); ?>" type="text" value="<?php echo esc_attr( $google ); ?>" />
         </p>
         <p>
-            <label for="<?php echo $this->get_field_name( 'dribbble' ); ?>"><?php _e( 'Dribbble URL:' ); ?></label>
+            <label for="<?php echo $this->get_field_name( 'dribbble' ); ?>"><?php _e( 'Dribbble URL:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'dribbble' ); ?>" name="<?php echo $this->get_field_name( 'dribbble' ); ?>" type="text" value="<?php echo esc_attr( $dribbble ); ?>" />
         </p>
         <p>
-            <label for="<?php echo $this->get_field_name( 'linkedin' ); ?>"><?php _e( 'Linkedin URL:' ); ?></label>
+            <label for="<?php echo $this->get_field_name( 'linkedin' ); ?>"><?php _e( 'Linkedin URL:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'linkedin' ); ?>" name="<?php echo $this->get_field_name( 'linkedin' ); ?>" type="text" value="<?php echo esc_attr( $linkedin ); ?>" />
         </p>        
         <p>
-            <label for="<?php echo $this->get_field_name( 'pinterest' ); ?>"><?php _e( 'Pinterest URL:' ); ?></label>
+            <label for="<?php echo $this->get_field_name( 'pinterest' ); ?>"><?php _e( 'Pinterest URL:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'pinterest' ); ?>" name="<?php echo $this->get_field_name( 'pinterest' ); ?>" type="text" value="<?php echo esc_attr( $pinterest ); ?>" />
         </p>
         <p>
-            <label for="<?php echo $this->get_field_name( 'instagram' ); ?>"><?php _e( 'Instagram URL:' ); ?></label>
+            <label for="<?php echo $this->get_field_name( 'instagram' ); ?>"><?php _e( 'Instagram URL:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'instagram' ); ?>" name="<?php echo $this->get_field_name( 'instagram' ); ?>" type="text" value="<?php echo esc_attr( $instagram ); ?>" />
         </p>
         <p>
-            <label for="<?php echo $this->get_field_name( 'youtube' ); ?>"><?php _e( 'Youtube URL:' ); ?></label>
+            <label for="<?php echo $this->get_field_name( 'youtube' ); ?>"><?php _e( 'Youtube URL:', 'restimo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'fb_url' ); ?>" name="<?php echo $this->get_field_name( 'youtube' ); ?>" type="text" value="<?php echo esc_attr( $youtube ); ?>" />
         </p>        
         <?php
