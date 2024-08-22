@@ -511,7 +511,7 @@ class Restimo_Features_Service extends Widget_Base{
 						<div class="features-service-img-reposive" style="background-image: url(<?php echo esc_url( $url ); ?>)"></div>
 					</div>
 					<figure class="features-service-img">
-						<?php if( $data['fservice_image']['url'] ) { echo esc_html($photo); } ?>
+						<?php if( $data['fservice_image']['url'] ) { echo esc_url($photo); } ?>
 					</figure>
 			<?php } endif; ?>
 		</div>
