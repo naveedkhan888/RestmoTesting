@@ -280,7 +280,7 @@ class Restimo_Button extends Widget_Base{
 
 		?>
 		<div class="xp-button">
-			<a <?php echo $this->get_render_attribute_string( 'button' ); ?>><?php echo esc_html( $settings['text'] ); ?></a>
+			<a <?php echo wp_kses_post($this->get_render_attribute_string( 'button' )); ?>><?php echo esc_html( $settings['text'] ); ?></a>
 	    </div>
 	    <?php
 	}
