@@ -159,6 +159,6 @@ class restimo_recent_news extends WP_Widget {
 
 // Register and load the widget
 function restimo_wpb_recent_news() {
-	//register_widget( 'restimo_recent_news' );
+	register_widget( 'restimo_recent_news' );
 }
 add_action( 'widgets_init', 'restimo_wpb_recent_news' );

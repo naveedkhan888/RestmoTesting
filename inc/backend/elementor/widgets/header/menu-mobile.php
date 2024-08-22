@@ -44,7 +44,7 @@ class Restimo_Menu_Mobile extends Widget_Base{
 				'type' => Controls_Manager::SELECT,
 				'multiple' => false,
 				'options' => $menus,
-				'default' => array_keys( $menus )[0],
+				'default' => array_keys( $menus )[1],
 				'save_default' => true,
 
 			]
