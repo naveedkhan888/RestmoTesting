@@ -96,7 +96,7 @@ class Restimo_Cart extends Widget_Base{
 		if ( null === WC()->cart ) {
 			return;
 		}
-		$product_count = sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() );
+		$product_count = sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'restimo' ), WC()->cart->get_cart_contents_count() );
 		$cart_url = esc_url( wc_get_cart_url() );
 
 		$widget_cart_is_hidden = apply_filters( 'woocommerce_widget_cart_is_hidden', false );
